@@ -45,7 +45,7 @@ let cars = [
 {
     marca: "opel",
     modello: "meriva",
-    alimentazione: "metano"
+    alimentazione: "elettrico"
 },
 {
     marca: "seat",
@@ -72,7 +72,7 @@ console.log(benzina);
 let diesel = cars.filter((element) => element.alimentazione === "diesel");
 console.log(diesel);
 
-let metano = cars.filter((element) => element.alimentazione === "metano");
+let metano = cars.filter((element) => element.alimentazione !== "benzina" && element.alimentazione !== "diesel");
 console.log(metano);
 
 
